@@ -1,0 +1,25 @@
+{
+  "name": "greenleaf-prisma",
+  "version": "0.9.0",
+  "description": "Exercice de création d'une API REST avec Node.js, Express et Prisma",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "node --watch ./src/index.js",
+    "start": "node ./src/index.js",
+    "build": "prisma generate",
+    "predeploy": "prisma migrate deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}
