@@ -6,11 +6,11 @@
 4. Charger une base Postgresql et s'assurer de la configuartion de la base dans le `.env`
 5. Vérifier la version de Prisma et le schéma
 
-   ````npx prisma -v
-   npx prisma validate```
-   validate vérifie la syntaxe du schema.prisma et que DATABASE_URL est bien lue. La version compte : avec Prisma 7, la config passe par un fichier prisma.config.ts et le .env n’est plus chargé automatiquement (il faut import "dotenv/config" dans ce fichier). C’est une source classique de « Environment variable not found » après un clone.
+   ```npx prisma -v
+   npx prisma validate
+   ```
 
-   ````
+   validate vérifie la syntaxe du schema.prisma et que DATABASE_URL est bien lue. La version compte : avec Prisma 7, la config passe par un fichier prisma.config.ts et le .env n’est plus chargé automatiquement (il faut import "dotenv/config" dans ce fichier). C’est une source classique de « Environment variable not found » après un clone.
 
 6. Si le dossier prisma/migrations/ existe (cas le plus courant) :
    Créer les tables : `npx prisma migrate dev`
