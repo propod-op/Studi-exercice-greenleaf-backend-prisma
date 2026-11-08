@@ -20,4 +20,4 @@
 
 7. Générer le client Prisma : `npx prisma generate`
 8. Peupler la base (si un seed existe) : `npx prisma db seed`
-9. LAncer le studio : `npx prisma studio`
+9. Lancer le studio : `npx prisma studio`
